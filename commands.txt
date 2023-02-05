@@ -28,5 +28,11 @@ on node  h1 hping3 10.0.0.12 --icmp --rand-source --flood
 on node  h2 hping3 10.0.0.12 --udp --rand-source --flood
 on node  h3 hping3 10.0.0.12 --syn --rand-source --flood
 
+For simulation in Raspberry Pi:
+
+Intsall RYU Controller in Raspberry Pi
+Run the cintroller in Raspberry Pi
+Change the IP Address in the topology file to RaspberryPi's IP Address .
+
 
 
