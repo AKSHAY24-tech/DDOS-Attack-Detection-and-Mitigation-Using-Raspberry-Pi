@@ -1,0 +1,32 @@
+--------------------Commands by Team-06-------------------------------------------
+
+Generating Normal Traffic:
+
+run command ryu-manager start_traffic_collection.py in ryu/ryu/app/
+run command sudo python2 generate_normal_traffic.py in mininet/custom/
+
+Generating DDos Traffic:
+
+run command ryu-manager collect_ddos_traffic.py in ryu/ryu/app/
+run command sudo python2 generate_ddos_traffic.py in mininet/custom/
+
+Detecting DDos and Normal Traffic:
+
+run command ryu-manager mitigation_module.py in ryu/ryu/app/
+run command sudo python2 topology.py in mininet/custom/
+
+after the above commands, run command xterm h1 h6 13 17 in mininet
+
+Normal Traffic:
+
+ping 10.0.0.15 on node h17 and then ping 10.0.0.4 on h6
+
+DDoS Traffic:
+
+on node  h17 ping 10.0.0.18
+on node  h1 hping3 10.0.0.12 --icmp --rand-source --flood
+on node  h2 hping3 10.0.0.12 --udp --rand-source --flood
+on node  h3 hping3 10.0.0.12 --syn --rand-source --flood
+
+
+
