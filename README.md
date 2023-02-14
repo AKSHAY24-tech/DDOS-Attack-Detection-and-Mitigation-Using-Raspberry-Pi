@@ -6,4 +6,7 @@ Using Entropy we are able to detect the attack and for this we used POX Controll
   Logistic Regression = 66.6%, 
   Naïve Bayes = 71.41% , 
   Decision Tree = 99%, 
-  Random Forest = 99.7 %, 
+  Random Forest = 99.7 %
+  
+  
+![image](https://user-images.githubusercontent.com/77917201/218697320-33bdbef4-f34a-45ed-912c-8b9a16728cc6.png)
